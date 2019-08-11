@@ -1,0 +1,9 @@
+<app-header (toggleSidebar)="_toggleSidebar()"></app-header>
+<ng-sidebar-container>
+    <ng-sidebar class="side-bar" [(opened)]="_opened" [mode]="_mode">
+        <p>Sidebar contents</p>
+    </ng-sidebar>
+    <div ng-sidebar-content>
+        <router-outlet></router-outlet>
+    </div>
+</ng-sidebar-container>

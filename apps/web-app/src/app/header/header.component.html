@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col logo-header-col">
+            <div class="sidebar-toggle" (click)="toggleSidebar.emit()">
+                <i class="material-icons sidebar-icon">
+                    menu
+                </i>
+            </div>
+            <a [routerLink]="''" [queryParams]="{source:'header-logo'}" class="header-logo-link">
+                <img class="logo-img" src="assets/images/YouTube_Logo.svg" alt="YouTube custom">
+            </a>
+        </div>
+        <div class="col-6 search-bar">
+            <div class="search-input">
+                <input class="search-term" />
+                <button class="search-btn">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<!-- <mat-grid-list cols="4" class="header" rowHeight="100px">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div class="sidebar-toggle" (click)="toggleSidebar.emit()">
+            <i class="material-icons sidebar-icon">
+                menu
+            </i>
+        </div>
+        <a [routerLink]="''" [queryParams]="{source:'header-logo'}" class="header-logo-link">
+            <img class="logo-img" src="assets/images/YouTube_Logo.svg" alt="YouTube custom">
+        </a>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1"></mat-grid-tile>
+</mat-grid-list> -->
